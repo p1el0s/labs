@@ -4,9 +4,8 @@ void func(T*&mas, int size) {
 		throw 1;
 	}
 	int newsize = (size / 3) + size;
-	int sizen = 0;
 	T* temp = new T[newsize];
-	for (int i = 0; i < size; i++) {
+	for (int i = 0, sizen = 0; i < size; i++) {
 		if (i % 3 == 2) {
 			temp[i + sizen] = mas[i];
 			sizen++;
