@@ -4,7 +4,6 @@
 #include <fstream>
 #include <string>
 #include <stdlib.h>
-#include <algorithm>
 
 class Graph {
 private:
