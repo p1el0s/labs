@@ -1,9 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <fstream>
 #include "graph.h"
-#include <string>
-#include <stdlib.h>
 
 int main() {
 	Graph a;
@@ -15,3 +10,4 @@ int main() {
 	a.show();
 	return 0;
 }
+
