@@ -9,8 +9,6 @@
 class Graph {
 private:
 	std::vector<std::vector<int>> llst;
-	std::vector<std::vector<int>> slst;
-	std::vector<std::vector<int>> temp;
 public:
 	void rebro(int rebro) {
 		std::vector<int> rebr;
@@ -60,7 +58,8 @@ public:
 		}
 	}
 	void ready() {
-	    temp = llst;
+		std::vector<std::vector<int>> temp = llst;
+		std::vector<std::vector<int>> slst;
 		while (1 != 0) {
 			slst = temp;
 			bool bol = false;
@@ -93,9 +92,10 @@ public:
 				break;
 			}
 		}
+		llst = temp;
 	}
 	void show() {
-		for (auto it = temp.begin(); it != temp.end(); ++it) {
+		for (auto it = llst.begin(); it != llst.end(); ++it) {
 			std::vector<int> ttemp = *it;
 			for (auto tit = ttemp.begin(); tit != ttemp.end(); ++tit) {
 				std::cout << *tit << ' ';
