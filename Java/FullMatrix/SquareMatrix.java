@@ -1,5 +1,3 @@
-package third.matrix;
-import third.exception.*;
 public class SquareMatrix extends Matrix{
 	private int size;
 
@@ -33,9 +31,3 @@ public class SquareMatrix extends Matrix{
 				this.setElement(i,b,0);
 	}
 }
-
-/*
-
-Mirror. 1 СТОЛБЕЦ ХРАНИТЬ ВЫВОДИТЬ ВСЕ ОСТАЛЬНЫЕ.
-
-*/
