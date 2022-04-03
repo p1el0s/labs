@@ -1,4 +1,3 @@
-package third.matrix;
 public class MirrorMatrix extends Matrix {
 	public MirrorMatrix(int n, int c) {
 		super(n, 1);
